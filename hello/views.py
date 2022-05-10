@@ -1,19 +1,23 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-from .models import Greeting
 
-# Create your views here.
 def index(request):
-    # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
 
 
-def db(request):
+def about(request):
+    return render(request, "landscape/about.html")
 
-    greeting = Greeting()
-    greeting.save()
 
-    greetings = Greeting.objects.all()
+def home(request):
+    return render(request, "home.html")
 
-    return render(request, "db.html", {"greetings": greetings})
+
+def result(request):
+    return render(request, "result.html")
+
+
+def service(request):
+    return render(request, "service.html")
+
+

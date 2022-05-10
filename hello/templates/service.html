@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<!--    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
+<!--    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+
+  </head>
+  <body>
+    <h1> Enter Service Input For landscaping services </h1>
+
+    <form action="{% url 'result' %}">
+      Areas : <input type="text" name="areas"> <br><br>
+      Planning span : <input type="text" name="Planning span"> <br><br>
+      Number of mowing equipments: <input type="text" name="Planning span"> <br><br>
+      Number of technicians : <input type="text" name="Planning span"> <br><br>
+<!--      <py-env>-->
+<!--        - pandas-->
+<!--        - matplotlib-->
+<!--        - numpy-->
+<!--      </py-env>-->
+
+<!--      <py-script> print("My Lineplot")</py-script>-->
+
+      <button type="submit" > Submit Input </button>
+
+    </form>
+
+    <h3>
+      <a href='/'>Back to Home page</a>
+    </h3>
+
+  </body>
+</html>
